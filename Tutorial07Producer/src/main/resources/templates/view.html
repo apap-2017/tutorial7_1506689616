@@ -9,7 +9,7 @@
        	<h3 th:text="'GPA = ' + ${student.gpa}">Student GPA</h3>
        	<h3>Kuliah yang diambil</h3>
        	<ul th:each="course,iterationStatus: ${student.courses}">
-       		<li th:text="${course.name} + '-' + ${course.credits} + ' sks'" > Nama kuliah-X SKS </li>
+       		<li th:text="${course.nama} + '-' + ${course.sks} + ' sks'" > Nama kuliah-X SKS </li>
        	</ul>
     </body>
 </html>

@@ -18,8 +18,8 @@ public interface CourseMapper
 	@Select("SELECT id_course, name, credits FROM course WHERE id_course = #{id}")
     @Results(value = {
     		@Result(property="idCourse", column="id_course"),
-    		@Result(property="name", column="name"),
-    		@Result(property="credits", column="credits"),
+    		@Result(property="nama", column="name"),
+    		@Result(property="sks", column="credits"),
     		@Result(property="students", column="id_course",
     		javaType = List.class,
     		many=@Many(select="selectStudents"))

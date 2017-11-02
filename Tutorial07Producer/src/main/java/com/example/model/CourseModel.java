@@ -12,8 +12,8 @@ import lombok.NoArgsConstructor;
 
 public class CourseModel {
 	private String idCourse;
-	private String name;
-	private Integer credits;
+	private String nama;
+	private Integer sks;
 	private List<StudentModel> students;
 }
 

@@ -55,7 +55,7 @@ public interface StudentMapper
     		"WHERE studentcourse.npm = #{npm}")
     @Results(value = {
     		@Result(property="idCourse", column="id_course"),
-    		@Result(property="name", column="name"),
-    		@Result(property="credits", column="credits")})
+    		@Result(property="nama", column="name"),
+    		@Result(property="sks", column="credits")})
     List<CourseModel> selectCourses (@Param("npm") String npm);
 }
